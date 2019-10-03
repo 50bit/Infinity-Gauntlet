@@ -1,13 +1,23 @@
 <script>
 import { onMount } from 'svelte';
+import {navigate} from 'svelte-routing';
 import axios from 'axios';
+import { isLoggedIn } from '../../store/store.js';
 
 let apiUrl='http://localhost:3000/products';
 let baseUrl='http://localhost:3000';
 let data = [];
+let user;
 onMount(()=>{
-  console.log("test")
+  isLoggedIn.subscribe(x=>user=x);
+  if(!user){
+    
+    navigate('/login',{replace:true});
+  }
+  
   axios.get(apiUrl).then(resjson=>data = resjson.data);
+  
+  
 })
 
 </script>

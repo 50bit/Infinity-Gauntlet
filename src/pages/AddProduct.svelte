@@ -1,7 +1,17 @@
 <script>
+    import {onMount} from 'svelte'
     import { fade , fly} from 'svelte/transition';
     const { css } = emotion;
+    import {navigate} from 'svelte-routing';
     import axios from 'axios';
+    import { isLoggedIn } from '../../store/store.js';
+    let user;
+    onMount(()=>{
+        isLoggedIn.subscribe(x=>user=x);
+        if(!user){
+            navigate('/login',{replace:true});
+        }
+    })
 
     let img = "https://images.pexels.com/photos/2775580/pexels-photo-2775580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
     $:actualImage="";

@@ -17,13 +17,15 @@ import { Router , Route } from 'svelte-routing';
 </script>
 
 <style>
-
+.body{
+	background-color: #303030!important;
+}
 </style>
 
 
 <Router>
 	<Navbar />
-	<div class="container">
+	<div class="container ">
 		<Route path='/' component={Home}></Route>
 		<Route path='/login' component={Login}></Route>
 		<Route path='/signup' component={Signup}></Route>
@@ -32,5 +34,6 @@ import { Router , Route } from 'svelte-routing';
 		<Route path='/products' component={Products}></Route>
 		<Route path='/new_product' component={AddProduct}></Route>
 	</div>
+
 </Router>
 

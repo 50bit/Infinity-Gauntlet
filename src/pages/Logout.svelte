@@ -7,7 +7,10 @@
         
         localStorage.removeItem('token');
         delete axios.defaults.headers.common['Authorization'];
-        isLoggedIn.update(n => n = false);
+        isLoggedIn.update((n) =>{
+            n = false;
+            navigate('/login', { replace: true });
+         });
         
     })
 

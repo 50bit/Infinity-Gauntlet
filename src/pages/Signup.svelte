@@ -28,23 +28,30 @@ async function onSubmit(e){
         text-align: center;
         font-weight: bolder;
         font-size: 40px;
-        color: #5c6bc0;
+        color: #FF3F80;
     }
     .card{
         width:600px;
         margin: 20px auto;
+        background-color: #424242;
     }
     .card .input-field input:focus + label {
-     color: #5c6bc0;
+     color: #FF3F80;
     }
 
    .card .input-field input:focus {
-     border-bottom: 1px solid #5c6bc0;
-     box-shadow: 0 1px 0 0 #5c6bc0;
+     border-bottom: 1px solid #FF3F80;
+     box-shadow: 0 1px 0 0 #FF3F80;
    }
+   input{color:white;}
    .card .btn{
        border-radius: 20px;
+       background-color: #FF3F80;
    }
+   label{
+       color:white;
+   }
+   
 </style>
 
 
@@ -80,7 +87,7 @@ async function onSubmit(e){
 
                 <div class="row">
 
-                    <button class="btn waves-effect waves-light indigo lighten-1 col s3" type="submit" name="action">Submit
+                    <button class="btn waves-effect waves-light col s3" type="submit" name="action">Submit
                         <i class="material-icons left">send</i>
                     </button>
                     <div class="col s5 push-s5">

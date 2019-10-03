@@ -15,29 +15,29 @@
 <style>
 
 .nav-extended{
-  background-color: whitesmoke!important;
-  box-shadow: none!important;
+  background-color: #212121!important;
+  
 }
 .brandName{
   display: inline;
-  font-size: 24px;
-  font-family: 'Sedgwick Ave Display', cursive;
-  color:#333;
-  margin-left: 100px;
+  font-size: 35px;
+  font-family: 'Notable', sans-serif;
+  color:#FF3F80;
+  width: 100px;
+  line-height: 0px;
+  text-shadow: 3px 2px #3E50B4;
 }
+
 </style>
 
 <svelte:head>
-<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
 </svelte:head>
 
-  <nav class="nav-extended">
-    <div class="nav-wrapper container">
+  <nav class="nav-extended ">
+    <div class="nav-wrapper container ">
       <Link to="/" >
-        <span class="brand-logo">
-          <img class="thanos" src="https://img.icons8.com/color/96/000000/thanos.png" alt="thanos">
-        </span>
-        <h2 class="brandName"> Thanos </h2>
+        <h2 class="brandName"> I . G</h2>
       </Link>
       <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
