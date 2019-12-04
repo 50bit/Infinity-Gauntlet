@@ -13,7 +13,7 @@
         }
     })
 
-    let img = "https://images.pexels.com/photos/2775580/pexels-photo-2775580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+    let img = "https://www.droidviews.com/wp-content/uploads/2018/05/htc_u12_stock_wall_droidviews.jpg";
     $:actualImage="";
     
     function print(event){
@@ -96,11 +96,25 @@
 .row{
     transition: all .4s ease!important;
 }
+.card-content h4{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 40px;
+        color: white;
+}
 .card{
     margin-top: 50px;
     border-radius: 40px!important;
     transition: all .4s ease!important;
     word-break: break-word;
+    background-color: #424242;
+}
+.card-reveal{
+    background-color: #424242;
+}
+.card-reveal .card-title{
+    color:white!important;
+    font-weight: bolder!important;
 }
 .originalPos{
     transform: translateX(-30%);
@@ -113,7 +127,7 @@
     opacity : 0 ;
     transform: translateX(-50px);
     transition: all .4s ease!important;
-
+    color: white;
 }
 .show{
     opacity : 1 ;
@@ -147,8 +161,14 @@ textarea{
 .halfway-fab{
     bottom:115px!important;
 }
-
-
+.card .btn{
+       border-radius: 20px;
+       background-color: #FF3F80;
+}
+input{color:white;}
+label{
+       color:white;
+}
 </style>
 
 
@@ -215,7 +235,7 @@ textarea{
                 </div>
 
                 <div class="row">
-                    <button  type="submit" class="btn custombtn waves-effect waves-light indigo lighten-1 col s3 " >Submit
+                    <button  type="submit" class="btn custombtn waves-effect waves-light col s3 " >Submit
                         <i class="material-icons left">send</i>
                     </button>
 

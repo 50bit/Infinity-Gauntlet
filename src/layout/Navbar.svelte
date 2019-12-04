@@ -49,6 +49,9 @@
           <li><Link to="/">Home</Link></li>
         {/if}
         {#if $isLoggedIn}
+          <li><Link to="/products">products</Link></li>
+        {/if}
+        {#if $isLoggedIn}
           <li><Link to="/logout">Logout</Link></li>
         {/if}
 
